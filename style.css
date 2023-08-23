@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.welcome {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  margin-top: 30vh;
+  font-weight: 500;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.welcome-text h1 {
+  font-size: 1.5rem;
+}
+
+.welcome-text a {
+  color: #f7542e;
+}
+
+.container {
+  width: 1140px;
+  margin: 50px auto;
+}
+
+.team-heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.team-heading__title {
+  font-family: "PT Serif";
+  font-size: 36px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.team-heading__introduce {
+  padding-left: 250px;
+}
+
+.introduce__tittle {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.introduce__description {
+  font-size: 18px;
+  font-weight: 400;
+  width: 70%;
+  margin-bottom: 100px;
+}
+
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.team-content__member {
+  width: fit-content;
+  height: fit-content;
+}
+
+.member__top {
+  display: flex;
+  position: relative;
+  width: fit-content;
+}
+
+.member__avatar {
+  width: 238px;
+  height: 341px;
+}
+
+.member__job-position {
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  height: fit-content;
+  width: 50%;
+  transform: rotate(90deg);
+  position: absolute;
+  right: -35%;
+  top: 16%;
+}
+
+.member__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.mt {
+  margin-top: 120px;
+}
+
+.team-author {
+  font-family: "PT Serif";
+  font-size: 14px;
+  font-weight: 500;
+  color: #a9a9a9;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.author__link {
+  font-weight: 700;
+  color: #a9a9a9;
+  transition: color 0.3s;
+}
+
+.author__link:hover {
+  color: #000000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .team-heading__introduce {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 991px) {
+  .team-heading {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .team-heading__introduce {
+    padding-left: 0;
+  }
+
+  .introduce__description {
+    width: 80%;
+  }
+
+  .team-content {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+  }
+
+  .mt-md-70 {
+    margin-top: 70px !important;
+  }
+
+  .mt-md-0 {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 20px;
+  }
+
+  .introduce__description {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .member__avatar {
+    width: 138px;
+    height: 209px;
+  }
+
+  .member__job-position {
+    width: 100%;
+    top: 30%;
+    right: -60%;
+  }
+
+  .member__name {
+    font-size: 14px;
+  }
+}
